@@ -1,0 +1,21 @@
+baseurl = "http://randyyaj.github.io/"
+languageCode = "en-us"
+title = "Randy Yang"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
+[params]
+    highlight="Assign a syntax highlight style"
+
+[author]
+    name = "Randy Yang"
+    github = "randyyaj"
+    linkedin = "randyyang"
+    twitter = "randyyaj"
+    disqusShortname = "randyyaj"
+    enableRSS = true
+    gaID = "UA-75290263-1"
+
