@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://randyyaj.github.io/</loc>
+    <lastmod>2016-11-29T14:46:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20161129_vue_spring/</loc>
+    <lastmod>2016-11-29T14:46:20-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20161128_kudu_impala_spring/</loc>
+    <lastmod>2016-11-28T20:52:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/about/</loc>
+    <lastmod>2016-11-28T19:49:50-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20161118_springboot_war/</loc>
+    <lastmod>2016-11-18T20:52:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20160504_beer_brewing/</loc>
+    <lastmod>2016-05-04T12:30:33-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20160322_inkscape/</loc>
+    <lastmod>2016-03-22T18:13:01-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20160318_kafka_running_locally/</loc>
+    <lastmod>2016-03-18T09:41:26-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20160317_gamedev/</loc>
+    <lastmod>2016-03-17T20:52:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20160317_03_gamedev/</loc>
+    <lastmod>2016-03-17T20:52:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20160317_02_gamedev/</loc>
+    <lastmod>2016-03-17T20:52:19-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20151014_inkscape/</loc>
+    <lastmod>2015-10-14T17:43:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20151014_one_day_with/</loc>
+    <lastmod>2015-10-14T17:43:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20151014_java/</loc>
+    <lastmod>2015-10-14T17:43:46-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://randyyaj.github.io/post/20150117_good_bye_blogspot/</loc>
+    <lastmod>2015-01-17T22:12:40-04:00</lastmod>
+  </url>
+  
+</urlset>

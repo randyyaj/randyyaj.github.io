@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Springboot with Impala and Kudu</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://randyyaj.github.io/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+
+<nav class="navbar navbar-light">
+  <a class="navbar-brand" href="http://randyyaj.github.io">
+    <img src="https://gravatar.com/avatar/6d7ef090bff61913938892be3233c0cd" alt="Card image cap" width="30" height="30">
+    Randy Yang
+  </a>
+  <span class="navbar-text float-xs-right text-muted">
+    <a href="https://www.github.com/randyyaj"><i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
+    <a href="https://www.gitlab.com/randyyaj"><i class="fa fa-gitlab fa-1x" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/randyyang"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></a>
+    <a href="http://ko-fi.com?i=2505JNS0N1IE5"><i class="fa fa-coffee fa-1x" aria-hidden="true"></i></a>
+  </span>
+</nav>
+
+<div class="container content-container">  
+  <h1>Springboot with Impala and Kudu</h1>
+  <strong>Mon, Nov 28, 2016</strong>
+  <div class="content">
+  
+
+<h3 id="how-to-run-this-app">How to run this app</h3>
+
+<p>Please follow the instructions below to get kudu running locally with java and impala driver.</p>
+
+<h3 id="download-the-kudu-quickstart-vm">Download the kudu quickstart VM</h3>
+
+<p><a href="https://kudu.apache.org/releases/">Kudu Quick Start VM</a></p>
+
+<h3 id="create-the-department-file-to-load">Create the department file to load</h3>
+
+<p>You can use this python script to create the department file to load: name it generate.py</p>
+
+<pre><code class="language-python">#!/usr/local/bin/python3
+default_path = '/Users/ryang1/Desktop'
+def generateDepartmentMasterFile():
+    &quot;&quot;&quot;
+    Company Id | Department Code | Department Description
+    &quot;&quot;&quot;
+    file = open(default_path+'/dept.txt','a')
+    for x in range (1,501):
+        file.write('Company{0}|{0}|Dept{0} 
+Description\n'.format(str(x)))
+generateDepartmentMasterFile()
+</code></pre>
+
+<p>Run it using</p>
+
+<pre><code>$ python3 generate.py
+</code></pre>
+
+<h3 id="load-the-department-file">Load the department file</h3>
+
+<p>Start your kudu quickstart VM. Once it has started run this command to find the vm ip. Should start with 192.168.***</p>
+
+<pre><code>$ ip addr show
+</code></pre>
+
+<pre><code>[demo@quickstart ~]$ ip addr show
+1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 16436 qdisc noqueue 
+state UNKNOWN
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+2: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc 
+pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:8a:40:9a brd ff:ff:ff:ff:ff:ff
+    inet 192.168.57.100/24 brd 192.168.57.255 scope global 
+eth0
+3: eth1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc 
+pfifo_fast state UP qlen 1000
+    link/ether 08:00:27:16:94:b5 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.3.15/24 brd 10.0.3.255 scope global eth1
+</code></pre>
+
+<p>Once you figure out your vm ip address, we will copy over the dept.txt file we created earlier with the python script and put it into hdfs.</p>
+
+<p>ssh username:demo password:demo</p>
+
+<pre><code>$ scp dept.txt demo@192.168.57.100:~/
+$ ssh demo@192.168.57.100
+$ hdfs dfs -put -f dept.txt /data/dept
+</code></pre>
+
+<h3 id="create-the-department-table-in-kudu-impala">Create the department table in kudu/impala</h3>
+
+<pre><code class="language-sql">CREATE EXTERNAL TABLE department_raw (
+    company_id string,
+    department_code int,
+    department_description string)
+    ROW FORMAT DELIMITED
+    FIELDS TERMINATED BY '|'
+    LOCATION '/data/dept/';
+</code></pre>
+
+<pre><code class="language-sql">CREATE TABLE department
+DISTRIBUTE BY HASH (company_id) INTO 16 BUCKETS
+TBLPROPERTIES(
+'storage_handler' = 
+'com.cloudera.kudu.hive.KuduStorageHandler',
+'kudu.table_name' = 'department',
+'kudu.master_addresses' = '127.0.0.1',
+'kudu.key_columns' = 'company_id'
+ ) AS SELECT * FROM department_raw;
+</code></pre>
+
+<p># Set the database configuration</p>
+
+<p>In the project search for src/main/java/config/DatabaseConfig.java and set the datasource url to your kudu/impala VM url</p>
+
+<pre><code class="language-java">@Bean(name=&quot;dataSource&quot;)
+public DataSource dataSource() {
+    DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
+    
+    //CHANGE ME!
+    dataSourceBuilder.url(&quot;jdbc:impala://192.168.57.100:21050&quot;);
+    
+    dataSourceBuilder.username(&quot;demo&quot;);
+    dataSourceBuilder.password(&quot;demo&quot;);
+    dataSourceBuilder.driverClassName(&quot;com.cloudera.impala.jdbc4.Driver&quot;);
+    return dataSourceBuilder.build();
+}
+</code></pre>
+
+<h1 id="setting-up-intellij">Setting up intellij</h1>
+
+<p>In order to run the spring boot app you will need to set the run configuration
+Run -&gt; Edit Configurations
+Press the + icon
+create a new maven entry name it to springboot-run
+change the command line input field to</p>
+
+<p>spring-boot:run</p>
+
+<p>hit apply/save.</p>
+
+<p>You are all set. Hit run.</p>
+
+<p>To see it in action go to your browser and visit url: <a href="http://localhost:8080/department?companyId=Company1">http://localhost:8080/department?companyId=Company1</a></p>
+
+  </div>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>

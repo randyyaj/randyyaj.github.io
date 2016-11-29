@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Don&#39;t Think Too Much</title>
+    <link>http://randyyaj.github.io/tags/technology/index.xml</link>
+    <description>Recent content on Don&#39;t Think Too Much</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://randyyaj.github.io/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Programming - Running Kafka Locally</title>
+      <link>http://randyyaj.github.io/post/20160318_kafka_running_locally/</link>
+      <pubDate>Fri, 18 Mar 2016 09:41:26 -0400</pubDate>
+      
+      <guid>http://randyyaj.github.io/post/20160318_kafka_running_locally/</guid>
+      <description>&lt;p&gt;Download the latest version of kafka from apache&amp;rsquo;s website. Make sure to download
+the binaries if you want to run it locally. Unzip the contents of the zip file and edit the config/server.properties file.&lt;/p&gt;
+
+&lt;p&gt;Set these variables to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;host.name=localhost
+advertised.host.name=localhost
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To enable auto-creation and deletion of topics in that same properties file add these properties&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;delete.topic.enable=true
+auto.create.topics.enable=true
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

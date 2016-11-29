@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One day with - Emacs</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://randyyaj.github.io/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+</head>
+<body>
+
+<nav class="navbar navbar-light">
+  <a class="navbar-brand" href="http://randyyaj.github.io">
+    <img src="https://gravatar.com/avatar/6d7ef090bff61913938892be3233c0cd" alt="Card image cap" width="30" height="30">
+    Randy Yang
+  </a>
+  <span class="navbar-text float-xs-right text-muted">
+    <a href="https://www.github.com/randyyaj"><i class="fa fa-github-alt fa-1x" aria-hidden="true"></i></a>
+    <a href="https://www.gitlab.com/randyyaj"><i class="fa fa-gitlab fa-1x" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/randyyang"><i class="fa fa-linkedin-square fa-1x" aria-hidden="true"></i></a>
+    <a href="http://ko-fi.com?i=2505JNS0N1IE5"><i class="fa fa-coffee fa-1x" aria-hidden="true"></i></a>
+  </span>
+</nav>
+
+<div class="container content-container">  
+  <h1>One day with - Emacs</h1>
+  <strong>Wed, Oct 14, 2015</strong>
+  <div class="content">
+  
+
+<p>I typically use Vi as my terminal editor of choice. However after recently talking with a colleague about Emacs as his terminal editor of choice; he intrigued me to using it. Now I&rsquo;ve opened up Emacs in the past before but that was just from accidentally opening it in the terminal. This week I decided to actually learn it.</p>
+
+<p>In this post I will write my daily thoughts, likes and dislikes, and what I learned that may help beginners trying to pick up this tool. In addition, to stay true to this post I decided to write this whole post in emacs. What better way to learn something than to just use it.</p>
+
+<hr />
+
+<h3 id="up-and-running">Up and Running</h3>
+
+<p>So coming in fresh I had no idea what C-x C-c meant. Like I literally hit shift c + x shift c + c. After a little googling I find out that the C in C-x is actually the control key. So now looking back C-x C-c really is just key sequence Ctrl + x + c.</p>
+
+<p>I also at first had no idea what M-f meant. Browsing stackoverflow helped me out on this one. Apparently M is the meta key so in this case since I was using a Mac machine M is the option/alt key. In windows it is the windows or super key. The weird thing about it was that the option key also made my Mac output funky text like this ƒ and ∫ when I try to use Meta + f and Meta + b. The solution to that problem was either to modify my terminal(iTerm2) settings to make the Meta key behave like a Meta key or use the escape key. I chose to do the former as it was easier to reach the option key for me. So to make this post easier for beginners I will refer to C as Ctrl and M as Meta.</p>
+
+<p>To get started I decided to learn the typical workflow patterns all editors should offer which are</p>
+
+<ul>
+<li>copy/cut and paste</li>
+<li>undo and redo</li>
+<li>search and replace</li>
+<li>navigation</li>
+<li>installing plugins</li>
+</ul>
+
+<p>Writing this post there were several occasions where I needed to cut and paste some lines. I looked at this <a href="http://www.rgrjr.com/emacs/emacs_cheat.html">cheat sheet</a> and easily enough all I had to do was mark the starting point with Ctrl + Space and then go to the end of the desired location and hit Ctrl + w. It also helps that you can copy a whole line by issuing Ctrl + k.</p>
+
+<p>Undo and redo was weird for me as I am used to doing Ctrl+r for redo and hitting u to undo in vim.
+The first thing I had to learn was what the heck the command for undo Ctrl+/ and redo Ctrl+g+/ was.
+Sometimes I would get weird behaviors when trying to redo changes but that may just be me not being use to emacs yet.</p>
+
+<p>The search and replace feature took me a few tries but I eventually got it. To search was relatively easy just hit Ctrl+s and start typing the word you want to find. The replace functionality was slightly more involved. To replace you had to hit Meta+% (Meta+Shift+5). Which will ask you to find the word to search for (hit enter) then the word to replace with (hit enter). Lastly it&rsquo;ll ask if you want to replace it. I had hit enter a couple times and it kept saying I had 0 occurrences. Finally I decided to hit the y key instead and it finally replaced the word for me.</p>
+
+<p>The navigation in emacs is a breeze as all arrow keys work and using Ctrl+v and Meta+v I was able to do page up and page down. Jumping words were also easy as I could just hit the sequence Meta key + arrow-Left or arrow-Right to jump words vs Meta+f Meta+b. But for productivity I can see where Meta+f and Meta+b can be more resourceful.</p>
+
+<p>Installing plugins has always been one of those things I hated but needed the most for vim. Sometimes things work other times its a complete disaster. So I was really hoping that emacs would be easier and decided to try installing a plugin to see for myself. The plugin I decided to try was a markdown plugin seeing as this post was written in markdown I figured hey why not. A little bit of googling and I happened to stumble upon this link <a href="http://emacswiki.org/emacs/MarkdownMode">Emacs Markdown Mode</a>. Now I have never done this before so it all looks scary new to me. The first few attempts really sucked as I had no idea what was wrong. I read the documentation on the plugin site multiple times and had no luck. I eventually got it to work after upgrading my Emacs version to the latest version. In doing so, the editor also allowed me to do visual selection - hold shift and using the arrow keys. I thought that was pretty cool.</p>
+
+<p>The hardest part for me was tying to un-train myself from using vim commands that I was so use to. I found myself constantly wanting to hit :w or run vim commands. Even when revisiting this post I sometimes open it via the vim command first. Had to resist the urges&hellip; must resist. From time to time I did happen to open the debugger window due to trained vim keystrokes. The way to get out of the debugger was pretty straight forward as I just hit the q key but sometimes it didn&rsquo;t work so I had to do something like Ctrl+1 to kill the window.</p>
+
+<p>At the end of the day I felt pretty confident with the basic emacs skills I developed and do think that it is a great and easy tool to pick up with a minimal learning curve.</p>
+
+<h3 id="likes">Likes</h3>
+
+<ul>
+<li>I like that the editor has only one mode. Unlike vim there are different modes that maybe intimidating to new users.</li>
+<li>I like that the arrow keys work</li>
+<li>Auto-saving. I can&rsquo;t tell you how much I want this in Vi.</li>
+<li>Emacs feels like an IDE where you can customize language specific features with different modes via the Ctrl key combination.</li>
+</ul>
+
+<h3 id="dislikes">Dislikes</h3>
+
+<ul>
+<li>Undo and redo works weird. I&rsquo;m still trying to wrap my head around this.</li>
+<li>Frustrating help window that refuses to close. I eventually got it to close by issuing Ctrl+1.<br /></li>
+<li>I wish there was a package manager to maintain the installation of the plugins</li>
+</ul>
+
+<h3 id="resource-used">Resource used</h3>
+
+<p><a href="http://www.rgrjr.com/emacs/emacs_cheat.html">Emacs Cheat Sheet</a>
+<a href="https://www.gnu.org/doc/doc.html">GNU Emacs Documentation</a></p>
+
+<h3 id="what-i-learned">What I learned</h3>
+
+<p>I felt that emacs was a really easy editor to start working in once you understood how the macros work.
+The workflow was somewhat smooth for a one day use I suppose it gets easier with time.
+The C and M keys are really Ctrl and Meta. The sequence gets easier once you understand the pattern.</p>
+
+<p>Macros that benefited me</p>
+
+<pre><code>Ctrl + Space //marked location
+Ctrl + w     //cut location
+Ctrl + y     //paste
+Ctrl + k     //cut whole line
+
+//undo:
+Ctrl + _
+Ctrl + /
+
+//redo:
+Ctrl + g + _
+Ctrl + g + /
+</code></pre>
+
+<h3 id="would-i-ever-use-it-again">Would I ever use it again</h3>
+
+<p>Sure. But I think I&rsquo;ll stick with Vi for a while.</p>
+
+  </div>
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
