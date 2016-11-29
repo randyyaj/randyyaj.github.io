@@ -390,7 +390,6 @@ mvn --projects backend springboot:run
 
 <p>To sum things up we created a maven reactor project that has a parent pom. The parent pom captures all the modules under it and when we run <code>mvn install</code> it will run any pom files in the module directories. The frontend module downloads a local npm and node executable, setups the registry and builds the app by minifying the source code and outputting it into the frontend&rsquo;s <code>target/dist</code> directory. The backend code then copies the dist/ directory&rsquo;s contents and puts it into <code>src/main/resources/public</code> where spring boots embeded tomcat will look for and serve when we startup our springboot app and visit localhost:8080.</p>
 
-  </div>
   <div id="disqus_thread"></div>
 <script type="text/javascript">
 
@@ -401,11 +400,12 @@ mvn --projects backend springboot:run
         return;
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    var disqus_shortname = '';
+    var disqus_shortname = 'randyyaj';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>                                         
+  </div>
 </div>
