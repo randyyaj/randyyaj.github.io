@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Don&#39;t Think Too Much</title>
-    <link>http://randyyaj.github.io/tags/one-day-with/index.xml</link>
+    <link>https://randyyaj.github.io/tags/one-day-with/index.xml</link>
     <description>Recent content on Don&#39;t Think Too Much</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://randyyaj.github.io/tags/one-day-with/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://randyyaj.github.io/tags/one-day-with/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>One day with - Emacs</title>
-      <link>http://randyyaj.github.io/post/20151014_one_day_with/</link>
+      <link>https://randyyaj.github.io/post/20151014_one_day_with/</link>
       <pubDate>Wed, 14 Oct 2015 17:43:46 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20151014_one_day_with/</guid>
+      <guid>https://randyyaj.github.io/post/20151014_one_day_with/</guid>
       <description>
 
 &lt;p&gt;I typically use Vi as my terminal editor of choice. However after recently talking with a colleague about Emacs as his terminal editor of choice; he intrigued me to using it. Now I&amp;rsquo;ve opened up Emacs in the past before but that was just from accidentally opening it in the terminal. This week I decided to actually learn it.&lt;/p&gt;

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Don&#39;t Think Too Much</title>
-    <link>http://randyyaj.github.io/tags/spring/index.xml</link>
+    <link>https://randyyaj.github.io/tags/spring/index.xml</link>
     <description>Recent content on Don&#39;t Think Too Much</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://randyyaj.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://randyyaj.github.io/tags/spring/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spring Boot and Vue.js</title>
-      <link>http://randyyaj.github.io/post/20161129_vue_spring/</link>
+      <link>https://randyyaj.github.io/post/20161129_vue_spring/</link>
       <pubDate>Tue, 29 Nov 2016 14:46:20 -0500</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161129_vue_spring/</guid>
+      <guid>https://randyyaj.github.io/post/20161129_vue_spring/</guid>
       <description>
 
 &lt;ol&gt;

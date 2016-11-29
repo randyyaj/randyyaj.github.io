@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Don&#39;t Think Too Much</title>
-    <link>http://randyyaj.github.io/tags/java/index.xml</link>
+    <link>https://randyyaj.github.io/tags/java/index.xml</link>
     <description>Recent content on Don&#39;t Think Too Much</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://randyyaj.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://randyyaj.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spring Boot and Vue.js</title>
-      <link>http://randyyaj.github.io/post/20161129_vue_spring/</link>
+      <link>https://randyyaj.github.io/post/20161129_vue_spring/</link>
       <pubDate>Tue, 29 Nov 2016 14:46:20 -0500</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161129_vue_spring/</guid>
+      <guid>https://randyyaj.github.io/post/20161129_vue_spring/</guid>
       <description>
 
 &lt;ol&gt;
@@ -376,10 +376,10 @@ mvn --projects backend springboot:run
     
     <item>
       <title>Programming - How to re-run completed spring batch jobs</title>
-      <link>http://randyyaj.github.io/post/20151014_java/</link>
+      <link>https://randyyaj.github.io/post/20151014_java/</link>
       <pubDate>Wed, 14 Oct 2015 17:43:46 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20151014_java/</guid>
+      <guid>https://randyyaj.github.io/post/20151014_java/</guid>
       <description>
 
 &lt;p&gt;While working with spring batch my team noticed that we couldn&amp;rsquo;t resubmit completed jobs even thought the params were different due to a spring batch feature not allowing non unique jobs to reprocesses after completion. In searching for an answer I stumbled upon this &lt;a href=&#34;http://forum.spring.io/forum/spring-projects/batch/102028-job-restartability-v-job-rerunnability&#34;&gt;Spring Forum Post&lt;/a&gt;. The details provided work although we still had to pass in a run id in our rest call since we are submitting job via rest API. So rather than specifying a run id each time we instead overrode the RunIdIncrementer class&amp;rsquo; getNext() method to just return a new Date() long each time. The code below provides a working solution.&lt;/p&gt;

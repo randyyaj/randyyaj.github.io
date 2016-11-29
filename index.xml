@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Don&#39;t Think Too Much</title>
-    <link>http://randyyaj.github.io/index.xml</link>
+    <link>https://randyyaj.github.io/index.xml</link>
     <description>Recent content on Don&#39;t Think Too Much</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 29 Nov 2016 14:46:20 -0500</lastBuildDate>
-    <atom:link href="http://randyyaj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://randyyaj.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spring Boot and Vue.js</title>
-      <link>http://randyyaj.github.io/post/20161129_vue_spring/</link>
+      <link>https://randyyaj.github.io/post/20161129_vue_spring/</link>
       <pubDate>Tue, 29 Nov 2016 14:46:20 -0500</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161129_vue_spring/</guid>
+      <guid>https://randyyaj.github.io/post/20161129_vue_spring/</guid>
       <description>
 
 &lt;ol&gt;
@@ -377,10 +377,10 @@ mvn --projects backend springboot:run
     
     <item>
       <title>Springboot with Impala and Kudu</title>
-      <link>http://randyyaj.github.io/post/20161128_kudu_impala_spring/</link>
+      <link>https://randyyaj.github.io/post/20161128_kudu_impala_spring/</link>
       <pubDate>Mon, 28 Nov 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161128_kudu_impala_spring/</guid>
+      <guid>https://randyyaj.github.io/post/20161128_kudu_impala_spring/</guid>
       <description>
 
 &lt;h3 id=&#34;how-to-run-this-app&#34;&gt;How to run this app&lt;/h3&gt;
@@ -505,20 +505,20 @@ change the command line input field to&lt;/p&gt;
     
     <item>
       <title>about</title>
-      <link>http://randyyaj.github.io/about/</link>
+      <link>https://randyyaj.github.io/about/</link>
       <pubDate>Mon, 28 Nov 2016 19:49:50 -0500</pubDate>
       
-      <guid>http://randyyaj.github.io/about/</guid>
+      <guid>https://randyyaj.github.io/about/</guid>
       <description>&lt;p&gt;About Page&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Springboot deploy as WAR</title>
-      <link>http://randyyaj.github.io/post/20161118_springboot_war/</link>
+      <link>https://randyyaj.github.io/post/20161118_springboot_war/</link>
       <pubDate>Fri, 18 Nov 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161118_springboot_war/</guid>
+      <guid>https://randyyaj.github.io/post/20161118_springboot_war/</guid>
       <description>&lt;p&gt;How to get springboot to deploy war instead of jar.&lt;/p&gt;
 
 &lt;p&gt;pom.xml&lt;/p&gt;
@@ -615,10 +615,10 @@ public class BeanConfig {
     
     <item>
       <title>Beer Brewing</title>
-      <link>http://randyyaj.github.io/post/20160504_beer_brewing/</link>
+      <link>https://randyyaj.github.io/post/20160504_beer_brewing/</link>
       <pubDate>Wed, 04 May 2016 12:30:33 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160504_beer_brewing/</guid>
+      <guid>https://randyyaj.github.io/post/20160504_beer_brewing/</guid>
       <description>
 
 &lt;p&gt;I am a big beer enthusiast. I love beer of all sorts and wanted to give a shot
@@ -693,10 +693,10 @@ it out of the fridge. No problem still tasted amazing. The alcohol kicked in fas
     
     <item>
       <title>Godot Game Jam Free Assets</title>
-      <link>http://randyyaj.github.io/post/20160322_inkscape/</link>
+      <link>https://randyyaj.github.io/post/20160322_inkscape/</link>
       <pubDate>Tue, 22 Mar 2016 18:13:01 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160322_inkscape/</guid>
+      <guid>https://randyyaj.github.io/post/20160322_inkscape/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/45209445/blog_posts/mouse_and_cheese_game.svg&#34;&gt;Download Assets Here&lt;/a&gt;
 Right click to download SVG. Ad-Free you&amp;rsquo;re welcome!&lt;/p&gt;
 
@@ -714,10 +714,10 @@ Assets are LICENSED under the PUBLIC DOMAIN. Do whatever with them as you please
     
     <item>
       <title>Programming - Running Kafka Locally</title>
-      <link>http://randyyaj.github.io/post/20160318_kafka_running_locally/</link>
+      <link>https://randyyaj.github.io/post/20160318_kafka_running_locally/</link>
       <pubDate>Fri, 18 Mar 2016 09:41:26 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160318_kafka_running_locally/</guid>
+      <guid>https://randyyaj.github.io/post/20160318_kafka_running_locally/</guid>
       <description>&lt;p&gt;Download the latest version of kafka from apache&amp;rsquo;s website. Make sure to download
 the binaries if you want to run it locally. Unzip the contents of the zip file and edit the config/server.properties file.&lt;/p&gt;
 
@@ -737,10 +737,10 @@ auto.create.topics.enable=true
     
     <item>
       <title>GameDev - Bombs</title>
-      <link>http://randyyaj.github.io/post/20160317_gamedev/</link>
+      <link>https://randyyaj.github.io/post/20160317_gamedev/</link>
       <pubDate>Thu, 17 Mar 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160317_gamedev/</guid>
+      <guid>https://randyyaj.github.io/post/20160317_gamedev/</guid>
       <description>&lt;p&gt;A Dactyl Clone I made using the Godot Engine. All code and assets are free for personal use.&lt;/p&gt;
 
 &lt;p&gt;This game is OpenSauce(open source) please feel free to savor the goodness and share it with the world! All recipes and ingredients for this game is licensed under the GPL2 License.
@@ -752,10 +752,10 @@ Assets (Sound/Art) are licensed under the Creative Commons (&lt;a href=&#34;http
     
     <item>
       <title>GameDev - Get the Goat</title>
-      <link>http://randyyaj.github.io/post/20160317_03_gamedev/</link>
+      <link>https://randyyaj.github.io/post/20160317_03_gamedev/</link>
       <pubDate>Thu, 17 Mar 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160317_03_gamedev/</guid>
+      <guid>https://randyyaj.github.io/post/20160317_03_gamedev/</guid>
       <description>&lt;p&gt;A game I made for the Global Game Jam Event. The theme was Ritual. All I could think about was Shamans and voodoo magic and sacrificial rituals so I decided to make an endless runner where the player is a goat and has to escape the shamans.&lt;/p&gt;
 
 &lt;p&gt;The other idea I had was a person who was totally OCD and has to do these rituals like turn a door knob 5 times or sort things in order.&lt;/p&gt;
@@ -770,10 +770,10 @@ You can find the game located here
     
     <item>
       <title>GameDev - Kraken Rampage!</title>
-      <link>http://randyyaj.github.io/post/20160317_02_gamedev/</link>
+      <link>https://randyyaj.github.io/post/20160317_02_gamedev/</link>
       <pubDate>Thu, 17 Mar 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160317_02_gamedev/</guid>
+      <guid>https://randyyaj.github.io/post/20160317_02_gamedev/</guid>
       <description>&lt;p&gt;A game I made for ludumDare33. Theme you are the monster. In this game you are a squid like creature that shits ink on humanity.
 The objective is to prevent the humans from bunking. I didn&amp;rsquo;t finish on time but the game is playable and funny.&lt;/p&gt;
 
@@ -787,10 +787,10 @@ The objective is to prevent the humans from bunking. I didn&amp;rsquo;t finish o
     
     <item>
       <title>Inkscape - Analysis of 2D Game Art (Denki Word Quest)</title>
-      <link>http://randyyaj.github.io/post/20151014_inkscape/</link>
+      <link>https://randyyaj.github.io/post/20151014_inkscape/</link>
       <pubDate>Wed, 14 Oct 2015 17:43:46 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20151014_inkscape/</guid>
+      <guid>https://randyyaj.github.io/post/20151014_inkscape/</guid>
       <description>
 
 &lt;h2 id=&#34;preface&#34;&gt;Preface&lt;/h2&gt;
@@ -847,10 +847,10 @@ leave a comment below. Stay tuned and thanks again for reading!&lt;/p&gt;
     
     <item>
       <title>One day with - Emacs</title>
-      <link>http://randyyaj.github.io/post/20151014_one_day_with/</link>
+      <link>https://randyyaj.github.io/post/20151014_one_day_with/</link>
       <pubDate>Wed, 14 Oct 2015 17:43:46 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20151014_one_day_with/</guid>
+      <guid>https://randyyaj.github.io/post/20151014_one_day_with/</guid>
       <description>
 
 &lt;p&gt;I typically use Vi as my terminal editor of choice. However after recently talking with a colleague about Emacs as his terminal editor of choice; he intrigued me to using it. Now I&amp;rsquo;ve opened up Emacs in the past before but that was just from accidentally opening it in the terminal. This week I decided to actually learn it.&lt;/p&gt;
@@ -943,10 +943,10 @@ Ctrl + g + /
     
     <item>
       <title>Programming - How to re-run completed spring batch jobs</title>
-      <link>http://randyyaj.github.io/post/20151014_java/</link>
+      <link>https://randyyaj.github.io/post/20151014_java/</link>
       <pubDate>Wed, 14 Oct 2015 17:43:46 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20151014_java/</guid>
+      <guid>https://randyyaj.github.io/post/20151014_java/</guid>
       <description>
 
 &lt;p&gt;While working with spring batch my team noticed that we couldn&amp;rsquo;t resubmit completed jobs even thought the params were different due to a spring batch feature not allowing non unique jobs to reprocesses after completion. In searching for an answer I stumbled upon this &lt;a href=&#34;http://forum.spring.io/forum/spring-projects/batch/102028-job-restartability-v-job-rerunnability&#34;&gt;Spring Forum Post&lt;/a&gt;. The details provided work although we still had to pass in a run id in our rest call since we are submitting job via rest API. So rather than specifying a run id each time we instead overrode the RunIdIncrementer class&amp;rsquo; getNext() method to just return a new Date() long each time. The code below provides a working solution.&lt;/p&gt;
@@ -994,10 +994,10 @@ public class RunIdIncrementer implements JobParametersIncrementer {
     
     <item>
       <title>Goodbye Blogspot</title>
-      <link>http://randyyaj.github.io/post/20150117_good_bye_blogspot/</link>
+      <link>https://randyyaj.github.io/post/20150117_good_bye_blogspot/</link>
       <pubDate>Sat, 17 Jan 2015 22:12:40 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20150117_good_bye_blogspot/</guid>
+      <guid>https://randyyaj.github.io/post/20150117_good_bye_blogspot/</guid>
       <description>&lt;p&gt;I doubt it but if anybody reading this now has ever looked at my blog over at randyyaj.blogspot.com. It has come to an end&amp;hellip; Oh fair well thee.
 I switched to a static site generator because I wanted a little more control of my contents and structure of my pages and also these static site generators
 are pretty nice with their markdown and all.&lt;/p&gt;

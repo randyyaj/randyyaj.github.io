@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Don&#39;t Think Too Much</title>
-    <link>http://randyyaj.github.io/tags/gamedev/index.xml</link>
+    <link>https://randyyaj.github.io/tags/gamedev/index.xml</link>
     <description>Recent content on Don&#39;t Think Too Much</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://randyyaj.github.io/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://randyyaj.github.io/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Springboot with Impala and Kudu</title>
-      <link>http://randyyaj.github.io/post/20161128_kudu_impala_spring/</link>
+      <link>https://randyyaj.github.io/post/20161128_kudu_impala_spring/</link>
       <pubDate>Mon, 28 Nov 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161128_kudu_impala_spring/</guid>
+      <guid>https://randyyaj.github.io/post/20161128_kudu_impala_spring/</guid>
       <description>
 
 &lt;h3 id=&#34;how-to-run-this-app&#34;&gt;How to run this app&lt;/h3&gt;
@@ -138,10 +138,10 @@ change the command line input field to&lt;/p&gt;
     
     <item>
       <title>Springboot deploy as WAR</title>
-      <link>http://randyyaj.github.io/post/20161118_springboot_war/</link>
+      <link>https://randyyaj.github.io/post/20161118_springboot_war/</link>
       <pubDate>Fri, 18 Nov 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20161118_springboot_war/</guid>
+      <guid>https://randyyaj.github.io/post/20161118_springboot_war/</guid>
       <description>&lt;p&gt;How to get springboot to deploy war instead of jar.&lt;/p&gt;
 
 &lt;p&gt;pom.xml&lt;/p&gt;
@@ -238,10 +238,10 @@ public class BeanConfig {
     
     <item>
       <title>Godot Game Jam Free Assets</title>
-      <link>http://randyyaj.github.io/post/20160322_inkscape/</link>
+      <link>https://randyyaj.github.io/post/20160322_inkscape/</link>
       <pubDate>Tue, 22 Mar 2016 18:13:01 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160322_inkscape/</guid>
+      <guid>https://randyyaj.github.io/post/20160322_inkscape/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://dl.dropboxusercontent.com/u/45209445/blog_posts/mouse_and_cheese_game.svg&#34;&gt;Download Assets Here&lt;/a&gt;
 Right click to download SVG. Ad-Free you&amp;rsquo;re welcome!&lt;/p&gt;
 
@@ -259,10 +259,10 @@ Assets are LICENSED under the PUBLIC DOMAIN. Do whatever with them as you please
     
     <item>
       <title>GameDev - Bombs</title>
-      <link>http://randyyaj.github.io/post/20160317_gamedev/</link>
+      <link>https://randyyaj.github.io/post/20160317_gamedev/</link>
       <pubDate>Thu, 17 Mar 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160317_gamedev/</guid>
+      <guid>https://randyyaj.github.io/post/20160317_gamedev/</guid>
       <description>&lt;p&gt;A Dactyl Clone I made using the Godot Engine. All code and assets are free for personal use.&lt;/p&gt;
 
 &lt;p&gt;This game is OpenSauce(open source) please feel free to savor the goodness and share it with the world! All recipes and ingredients for this game is licensed under the GPL2 License.
@@ -274,10 +274,10 @@ Assets (Sound/Art) are licensed under the Creative Commons (&lt;a href=&#34;http
     
     <item>
       <title>GameDev - Get the Goat</title>
-      <link>http://randyyaj.github.io/post/20160317_03_gamedev/</link>
+      <link>https://randyyaj.github.io/post/20160317_03_gamedev/</link>
       <pubDate>Thu, 17 Mar 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160317_03_gamedev/</guid>
+      <guid>https://randyyaj.github.io/post/20160317_03_gamedev/</guid>
       <description>&lt;p&gt;A game I made for the Global Game Jam Event. The theme was Ritual. All I could think about was Shamans and voodoo magic and sacrificial rituals so I decided to make an endless runner where the player is a goat and has to escape the shamans.&lt;/p&gt;
 
 &lt;p&gt;The other idea I had was a person who was totally OCD and has to do these rituals like turn a door knob 5 times or sort things in order.&lt;/p&gt;
@@ -292,10 +292,10 @@ You can find the game located here
     
     <item>
       <title>GameDev - Kraken Rampage!</title>
-      <link>http://randyyaj.github.io/post/20160317_02_gamedev/</link>
+      <link>https://randyyaj.github.io/post/20160317_02_gamedev/</link>
       <pubDate>Thu, 17 Mar 2016 20:52:19 -0400</pubDate>
       
-      <guid>http://randyyaj.github.io/post/20160317_02_gamedev/</guid>
+      <guid>https://randyyaj.github.io/post/20160317_02_gamedev/</guid>
       <description>&lt;p&gt;A game I made for ludumDare33. Theme you are the monster. In this game you are a squid like creature that shits ink on humanity.
 The objective is to prevent the humans from bunking. I didn&amp;rsquo;t finish on time but the game is playable and funny.&lt;/p&gt;
 
