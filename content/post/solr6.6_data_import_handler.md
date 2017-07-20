@@ -18,7 +18,7 @@ $ unzip solr.6.X.X.zip <destination>
 
 Copy postgres driver to /solr-6.6.0/server/lib 
 ```
-cp postgresql-42.1.1.jar /solr-6.6.0/server/lib 
+$ cp postgresql-42.1.1.jar /solr-6.6.0/server/lib 
 ```
 
 ## Creating a new solr configset
@@ -84,8 +84,8 @@ Now when the data import handler is running it will know how to extract the faci
 
 Once this is all done create a new core with the new configuration (dih) we created earlier and start solr cloud
 ```
-$ solr-6.6.0/bin/solr create -c coreName -d dih 
 $ solr-6.6.0/bin/solr start -e cloud -noprompt
+$ solr-6.6.0/bin/solr create -c coreName -d dih 
 ```
 
 **Method 2**: Through the web interface solrUI [http://localhost:8983/solr](http://localhost:8983/solr) **if solr cloud is already running*
