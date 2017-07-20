@@ -18,7 +18,7 @@ $ unzip solr.6.X.X.zip <destination>
 
 Copy postgres driver to /solr-6.6.0/server/lib 
 ```
-$ cd /solr-6.6.0/server/solr/configsets/basic_configs /solr-6.6.0/server/solr/configsets/dih
+cp postgresql-42.1.1.jar /solr-6.6.0/server/lib 
 ```
 
 ## Creating a new solr configset
