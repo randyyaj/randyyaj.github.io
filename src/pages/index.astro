@@ -1,0 +1,468 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+export interface Technology {
+	name: string;
+	url: string;
+}
+
+export interface Description {
+	text: string;
+	subtext?: Description[];
+}
+
+export interface Experience {
+	workplace: string;
+	position: string;
+	serviceLength: string;
+	location: string;
+	description: Description[];
+	techstack: Array<Technology>;
+}
+
+const experiences: Experience[] = [
+	{
+		workplace: "Freelance",
+		position: "Independent Software Engineer",
+		serviceLength: "2023 - Present",
+		location: "Spartanburg, SC",
+		description: [
+			{ 
+				text: 'Hmong Southeast Puavpheej, Inc (Hickory, NC)  - Nonprofit Organization', 
+				subtext: [
+					{ text: 'Design, develop, and maintain website' },
+					{ text: 'Upgrade current IT infrastructure, oversee technology stack, oversee IT operations.' },
+					{ text: 'Integrate application with 3rd party APIs and Services.' },
+				]
+			},
+			{
+				text: 'BB Nail & Spa (Burlington, NC) - Business',
+				subtext: [ { text: 'Design, develop, and maintain website.' }]
+			}
+		],
+		techstack: [
+			{ name: "Typescript", url: "https://www.typescriptlang.org/" },
+			{ name: "Netlify", url: "https://www.netlify.com/" },
+			{ name: "AstroJS", url: "https://astro.build/" },
+			{ name: "Sanity CMS", url: "https://www.sanity.io/" },
+		],
+	},
+	{
+		workplace: "BMW",
+		position: "Fullstack Software Engineer",
+		serviceLength: "2019 - 2023",
+		location: "Greenville, SC",
+		description: [
+			{
+				text: 'Developed an application called FMS – Field Management System for managing dealership interaction.',
+			}
+			,
+			{
+				text: 'Developed an application called BMW ChargeForward for managing user vehicle charging',
+			}
+			,
+			{
+				text: 'Developed an application for managing mobile wallet passes called BMW-Prime',
+			},
+			{
+				text: 'Developed front-end application in AngularJS called WebEAM Next to handle OAuth2 authentication leveraging ForgeRock’s API',
+			},
+			{
+				text: 'Continuous integration and deployment via AWS codepipeline',
+			}
+		],
+		techstack: [
+			{ name: "Typescript", url: "https://www.typescriptlang.org/" },
+			{ name: "Angular", url: "https://angular.io/" },
+			{ name: "ForgeRock", url: "https://www.forgerock.com/" },
+			{ name: "NestJS", url: "https://nestjs.com/" },
+			{ name: "Postgresql", url: "https://www.postgresql.org/" },
+			{ name: "TypeORM", url: "https://typeorm.io/" },
+			{ name: "MikroORM", url: "https://mikro-orm.io/" },
+			{ name: "Docker", url: "https://www.docker.com/" },
+			{ name: "Spring Cloud Gateway", url: "https://cloud.spring.io/spring-cloud-gateway/reference/html/" },
+			{ name: "AWS (Lambda, Gateway, Beanstalk, EC2, SNS, SQS, EC2, RDS, DynamoDB)", url: "https://aws.amazon.com/" },
+
+		],
+	},
+	{
+		workplace: "Premier Inc.",
+		position: "Software Engineer",
+		serviceLength: "2015 - 2019",
+		location: "Greenville, SC",
+		description: [
+			{
+				text: 'Developed a web application for hospital users to be able to interact with their data called Premier Data Exchange.',
+			},
+			{
+				text: 'Responsibilities include designing, developing, and testing for the front-end, back-end, and continuous integration/deployment.',
+			},
+			{
+				text: 'Developed a front-end single page application using Vaadin as the core technology.',
+			}
+			,
+			{
+				text: 'Prototype in web technologies such as VueJS.',
+			}
+			,
+			{
+				text: 'Continuous integration and deployment via Bamboo, Gitlab and Docker.',
+			}
+		],
+		techstack: [
+			{ name: "Java", url: "https://www.oracle.com/java/technologies/downloads/" },
+			{ name: "Spring", url: "https://spring.io/" },
+			{ name: "Groovy", url: "https://groovy-lang.org/" },
+			{ name: "RabbitMQ", url: "https://www.rabbitmq.com/" },
+			{ name: "Vaadin", url: "https://vaadin.com/" },
+			{ name: "Selenium", url: "https://www.selenium.dev/" },
+			{ name: "Docker", url: "https://www.docker.com/" },
+			{ name: "Oracle", url: "https://www.oracle.com/database/" },
+			{ name: "CockroachDB", url: "https://www.cockroachlabs.com/" },
+			{ name: "Cloudera Hadoop", url: "https://www.cloudera.com/" },
+		],
+	},
+	{
+		workplace: "Premier Inc.",
+		position: "Associate Software Engineer",
+		serviceLength: "2013 - 2014",
+		location: "Greenville, SC",
+		description: [
+			{
+				text: 'Developed an in-house web application for use in mapping clinical data called Premier SPL Mapper. Saved company time and money when having to submit proper data to the government.',
+			},
+			{
+				text: 'Responsibilities include designing, developing, and testing for the front-end, back-end, and continuous integration/deployment.',
+			},
+			{
+				text: 'Used Solr search engine technology to do predictive mappings of hospital submitted description to billing codes.',
+			}
+			,
+			{
+				text: 'Wrote REST API endpoints for the client front-end to request data from backend services. Back-end service written with Spring Boot and database interaction with Spring Data-JPA and OracleDB.',
+			}
+			,
+			{
+				text: 'Provided data sync between legacy app and current app by passing data through RabbitMQ',
+			}
+			,
+			{
+				text: 'Continuous integration and deployment via Atlassian Bamboo and Docker.',
+			}
+			,
+			{
+				text: 'Provided data sync between legacy app and current app by passing data through RabbitMQ',
+			}
+		],
+		techstack: [
+			{ name: "Java", url: "https://www.oracle.com/java/technologies/downloads/" },
+			{ name: "Javascript", url: "https://vaadin.com/" },
+			{ name: "Spring", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+			{ name: "Solr", url: "https://solr.apache.org/" },
+			{ name: "Dojo Toolkit", url: "https://dojotoolkit.org/" },
+			{ name: "RabbitMQ", url: "https://www.rabbitmq.com/" },
+			{ name: "Selenium", url: "https://www.selenium.dev/" },
+			{ name: "Docker", url: "https://www.docker.com/" },
+			{ name: "Oracle", url: "https://www.oracle.com/database/" },
+		],
+	},
+];
+
+export interface Project {
+	title: string;
+	url?: string;
+	description: Description[];
+}
+
+const projects: Project[] = [
+	{ 
+		title: 'BB Nail & Spa',
+		url: 'https://bbnailandspa.com',
+		description: [
+			{ 
+				text: `This project includes designing and developing a website for a business with SEO in mind.
+				The project leverages the AstroJS framework and Sanity CMS behind the scenes for content management.
+				The website uses TailwindCSS for styling and the project was hosted on Netlify and the domain registered with Porkbun.`
+			},
+		]
+	},
+	{ 
+		title: 'Hmong Southeast Puavpheej',
+		url: 'https://hmongsoutheastpuavpheej.org',
+		description: [
+			{ 
+				text: `This project includes designing and developing a website for a nonprofit organization.
+				The organization needed a new technological stack as it was previously unmaintained and done in wordpress.
+				The project leverages the AstroJS framework for the frontend and Sanity CMS behind the scenes for content management.
+				The website uses TailwindCSS for styling and the project was hosted on Netlify and the domain registered with GoDaddy.
+				Integrations with third party APIs includes Givelively, Clicksend, Tally.so, Make, and Stripe`
+			},
+		]
+	},
+	{ 
+		title: 'BMW Field Management System',
+		url: '',
+		description: [
+			{ 
+				text: `FMS is an application written for tracking BMW and dealership interactions
+				such as phone calls, messages, meetings, notes, emails and other forms of interactions.
+				The project was created to move data away from salesforce and into BMW's database. 
+				The project's UI was written in angular, with Nestjs powering the API.
+				The project was deployed on kubernetes and leveraged spring cloud gateway for routing and reverse proxy.`
+			},
+		]
+	},
+	{ 
+		title: 'BMW ChargeForward',
+		url: 'https://bmwchargeforward.com',
+		description: [
+			{ 
+				text: `
+				BMW ChargeForward is an app that manages/influences customer's electric vehicle charging.
+				By charging during off-peak hours, BMW incentivizes the customer with a dollar amount per kwh charged per session in gift cards.
+				This project encompasses a collection of BMW internal services providing vehicle data sources. 
+				To manage the streams of vehicle event data, AWS Lambda, SQS, and Kinesis were built together in a Typescript mono repo.
+				BMW ChargeForward leverages AWS lambda to interact with 3rd party API's and also serves as a pipeline for collecting and filtering data.
+				The backend is built with Nodejs, Typeorm, Nestjs framework and PostgreSQL and deployed via codepipeline onto AWS Beanstalk.
+				The frontend is built with Angular and an nginx image and deployed via codepipeline onto AWS Beanstalk.`
+			},
+		]
+	},
+	{ 
+		title: 'BMW Prime',
+		url: '',
+		description: [
+			{ 
+				text: `BMW Prime is a NestJS application written for issueing wallet passes. 
+				BMW Prime integrates with passcreator's APIs.
+				These passes includes discounts and other promotional items.`
+			},
+		]
+	},
+	{ 
+		title: 'Premier Data Exchange',
+		url: 'https://dataexchange.premierinc.com',
+		description: [
+			{
+				text: `Premier Data Exchange is an ETL application with a frontend and backend component. 
+				The data is collected from health care systems and passed into data exchange using a series of ETL tools like apache hadoop, scoop, and hdfs.
+				The data is then filtered and stored into an oracle database. 
+				The frontend was written in Java using the Vaadin Framework due to the teams Java heavy nature. 
+				The backend was written in Java using the Spring Framework.
+				The application was deployed via Atlassian Bamboo onto docker swarm`
+			}
+		]
+	},
+	{ 
+		title: 'Premier SPL Mapper',
+		url: 'https://splmapper.premierinc.com',
+		description: [
+			{
+				text: `Premier SPLMapper is an application written to intelligently map unformatted string/text to Federal readable standard.
+				Example: Tylenol 0.035274oz -> Acetaminophen 1000MG.
+				The application utilized Solr for searching, weighing, ranking and mapping to the correct data.
+				Search algorithms include TF-IDF (term frequency–inverse document frequency), BM25, CPT code mapping, and custom learning algorithms.
+				The backend was written in Java using the Spring Framework and data was ingested via RabbitMQ and Cloudera ETL tools.
+				The frontend was written in Javascript using the Dojo Toolkit.
+				The application was deployed via Atlassian Bamboo onto docker swarm`
+			}
+		]
+	},
+];
+
+const personalProjects: Project[] = [
+	{ 
+		title: 'Royal Magical Library',
+		url: 'https://royalmagicallibrary.com',
+		description: [
+			{ 
+				text: `Royal Magical Library is my attempt to combine NextJS (frontend), typesense(Full Text Search), and postgresql(Database) into a Yu-Gi-Oh card search engine. Similar to that of scryfall.com`
+			},
+		]
+	},
+	{ 
+		title: 'PeterPiper',
+		url: 'https://github.com/randyyaj/peterpiper',
+		description: [
+			{ 
+				text: `Sometimes you just want to pipe things in JS. This library was made to do that. It was named after an English-language nursery rhyme "Peter Piper".`
+			},
+		]
+	}
+];
+---
+
+<Layout title="Randy Yang">
+	<main class="p-10 mt-5 flex-grow flex flex-col gap-8 mx-auto container">
+		<div>
+			<div class="flex flex-row">
+				<p class="font-semibold text-4xl flex-grow">Randy Yang</p>
+        <div class="group flex relative">
+          <button id="themeSwitchButton" aria-label="Theme Switch Button"><i class="fa-solid fa-circle-half-stroke"></i></button>
+          <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+          -translate-x-1/2 translate-y-full opacity-0 mx-auto">Toggle Theme</span>
+        </div>
+			</div>
+			<hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
+			<p class="italic">Full Stack Software Engineer, Designer, Game Developer</p>
+			<p class="mt-8">
+				Hello and welcome. I am a seasoned full stack software engineer with 10+ years of experience in the industry. I love making and breaking stuff. It's the best way to learn!
+				As a fullstack software engineer, I am a versatile professional with a passion for creating innovative software applications. My expertise in both front-end and back-end development allows me to build robust and scalable software products that can run seamlessly on various platforms and devices. With a diverse range of technical skills, including programming languages, frameworks, and databases, I have a deep understanding of user interface design, server-side programming, and database management. As a result, I am able to create high-quality software products that meet the needs of modern businesses and organizations. I am excited to continue pushing the boundaries of software engineering and delivering solutions that have a positive impact on people's lives.
+			</p>
+		</div>
+
+		<section id="experience" class="flex flex-col gap-4">
+			<a href="#experience" class="font-semibold text-2xl underline align-middle">Experience <i class="fa-solid fa-link fa-small text-sm"></i></a>
+			{
+				experiences.map((experience: Experience) => (
+					<div class="flex flex-col">
+						<div class="flex flex-row">
+							<div class="flex flex-col flex-grow">
+								<p class="font-semibold text-xl">{experience.workplace}</p>
+								<p class="italic">{experience.position}</p>
+								<p>{experience.serviceLength}</p>
+							</div>
+						</div>
+						<div class="ml-4 text-sm">
+							<div class="list-disc">
+								{
+									experience.description.map((description: Description) => (
+										<div>{description.text}</div>
+										<div class="ml-4">
+										{
+											description?.subtext?.map((subtext: Description) => (
+												<div>{subtext.text}</div>
+											))
+										}
+										</div>
+									))
+								}
+							</div>
+						</div>
+						<div>
+							<details class="hover:cursor-pointer">
+								<summary>Tech Stack</summary>
+								<ul class="ml-8 text-sm">
+									{ experience.techstack.map(
+										(technology: Technology) => (
+											<li>
+												<a href={technology.url}>
+													{technology.name}
+												</a>
+											</li>
+										)
+									)}
+								</ul>
+							</details>
+						</div>
+					</div>
+				))
+			}
+		</section>
+
+    <section id="professional-projects" class="flex flex-col gap-4">
+      <a href="#professional-projects" class="font-semibold text-2xl underline align-middle">Professional Projects <i class="fa-solid fa-link fa-small text-sm"></i></a>
+      <div class="flex flex-col gap-2">
+        { 
+          projects.map((project: Project) => (
+            <div>
+              <div class="flex flex-col gap-2 align-middle">
+                { project.url ?
+                  <a href={ project.url } class="font-semibold">{ project.title } <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a> 
+                  : <p class="font-semibold">{ project.title }</p>
+                }
+              </div>
+              <div class="ml-4 text-sm">
+                { 
+                  project.description.map((description: Description) => (
+                    <p>{ description.text }</p> 
+                  ))
+                }
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+		<section id="personal-projects" class="flex flex-col gap-4">			
+      <a href="#personal-projects" class="font-semibold text-2xl underline align-middle">Personal Projects <i class="fa-solid fa-link fa-small text-sm"></i></a>
+			<div class="flex flex-col gap-2">
+				<div><a href="https://github.com/randyyaj/"><i class="fa-brands fa-github mr-2"></i>Github</a></div>
+				{ 
+					personalProjects.map((project: Project) => (
+						<div>
+              <div class="flex flex-col gap-2 align-middle">
+                  { project.url ?
+                    <a href={ project.url } class="font-semibold">{ project.title } <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a> 
+                    : <p class="font-semibold">{ project.title }</p>
+                  }
+                </div>							
+                <div class="ml-4 text-sm">
+								{ 
+									project.description.map((description: Description) => (
+										<p>{ description.text }</p> 
+									))
+								}
+							</div>
+						</div>
+					))
+				}
+			</div>
+		</section>
+
+		<section id="resume" class="flex flex-col gap-4">			
+      <a href="#resume" class="font-semibold text-2xl underline align-middle">Resume <i class="fa-solid fa-link fa-small text-sm"></i></a>
+			<a href="https://docs.google.com/document/d/1rxUhFZ5yZUtpfEf_ifrGOQ0SdhoKsPyklpJA5v9hn4s"><i class="fa-solid fa-file-arrow-down mr-2"></i>Download</a>
+		</section>
+
+		<section id="education" class="flex flex-col gap-4">
+      <a href="#education" class="font-semibold text-2xl underline align-middle">Education <i class="fa-solid fa-link fa-small text-sm"></i></a>
+			<div class="flex flex-col gap-4">
+				<div class="flex flex-row flex-wrap">
+					<a href="https://www.wcu.edu/"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Western_Carolina_University_Logo.svg" alt="Western Carolina University" class="w-36 h-16 mr-4"></a>
+					<div>
+						<p class="font-semibold">B.S. in Computer Science, Minor in Mathematics</p>
+						<p>Western Carolina University, Cullowhee, NC</p>
+						<p>2013</p>
+					</div>
+				</div>
+				<div class="flex flex-row flex-wrap">
+					<a href="https://www.cpcc.edu/"><img src="https://cdn.cpcc.edu/latest/images/logos/favicon.svg" alt="CPCC" class="w-36 h-14 mr-4"></a>
+					<div>
+						<p class="font-semibold">Studied Simulation and Game Development</p>
+						<p>Central Piedmont Community College, Charlotte, NC</p>
+						<p>2009</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section id="contact" class="flex flex-col gap-4">
+      <a href="#contact" class="font-semibold text-2xl underline align-middle">Contact Me <i class="fa-solid fa-link fa-small text-sm"></i></a>
+      <div class="flex flex-col gap-2">
+        <a href="mailto:randyyaj1@gmail.com"><i class="fa-regular fa-envelope mr-2"></i>Email</a>
+        <a href="https://www.linkedin.com/in/randyyang/"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
+      </div>
+    </section>
+	</main>
+</Layout>
+
+<script>
+  const themeToggleButton: HTMLElement = document.getElementById('themeSwitchButton') as HTMLElement;
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme) {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+  }
+
+  themeToggleButton?.addEventListener("click", (e: Event) => {
+    if (localStorage.getItem("theme") === 'light') {
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    }
+  }, false);
+</script>
