@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from '@tailwindcss/vite';
 
 import compress from "astro-compress";
 
@@ -7,5 +7,8 @@ import compress from "astro-compress";
 export default defineConfig({
   site: 'https://randyyaj.github.io',
   base: '/',
-  integrations: [tailwind(), compress()]
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [compress()],
 });

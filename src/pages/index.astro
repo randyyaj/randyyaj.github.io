@@ -22,148 +22,251 @@ export interface Experience {
 
 const experiences: Experience[] = [
 	{
-		workplace: "Hmong Southeast Puavpheej",
-		position: "Director of IT Operations ",
-		serviceLength: "2023 - Present",
-		location: "Hickory, NC",
+		workplace: "Stratiform Digital (Remote)",
+		position: "Senior Data Engineer",
+		serviceLength: "2026 - Present",
+		location: "Charleston, SC",
 		description: [
-			{ 
-				text: `Upgrade current IT infrastructure, oversee and manage organization's IT stack.`, 
+			{
+				text: 'Manage subcontracted deliverables for the Medicaid Drug Program (MDP).',
 			},
 			{
-				text: `Lead negotiations, budgeting, purchasing, and putting efficient workflows in place to maximize a company's productivity.`,
+				text: 'Analyze data and engineer solutions for complex pharmaceutical rebate calculations.',
 			},
 			{
-				text: 'Put in place Google Workspace for day to day communication, collaboration, and marketing.',
-			},
-			{
-				text: 'Enrolled organization into nonprofit beneficial spaces such as Techsoup and Givelively for IT purchasing and donations.',
-			},
-			{
-				text: 'Setup workflow and services for email, newsletter, and sms marketing for better organization outreach.'
-			},
-			{
-				text: 'Overhaul website and content management system.'
+				text: 'Migrate a legacy Java monolith to a modern AWS cloud infrastructure.',
 			}
 		],
 		techstack: [
+			{ name: "Java", url: "https://www.oracle.com/java/technologies/downloads/" },
+			{ name: "AWS", url: "https://aws.amazon.com/" },
 		],
 	},
 	{
-		workplace: "BMW",
-		position: "Fullstack Software Engineer",
+		workplace: "Fortis (Remote)",
+		position: "Software Engineering Manager",
+		serviceLength: "2024 - 2026",
+		location: "Plano, TX",
+		description: [
+			{
+				text: 'Lead and mentor a team of six data engineers responsible for enterprise data platforms and integrations.',
+			},
+			{
+				text: 'Define data architecture standards, engineering best practices, and technical roadmaps.',
+			},
+			{
+				text: 'Partner with business stakeholders, product teams, and engineering leadership to prioritize and deliver strategic initiatives.',
+			},
+			{
+				text: 'Conduct performance reviews, career development planning, and regular coaching sessions.',
+			},
+			{
+				text: 'Drive technical design discussions and architecture reviews across multiple projects.',
+			},
+			{
+				text: 'Oversee the development and maintenance of scalable ETL pipelines, data synchronization services, and reporting solutions.',
+			},
+			{
+				text: 'Champion automation, testing, and CI/CD practices to improve reliability and delivery efficiency.',
+			},
+			{
+				text: 'Leveraged AI agents to generate and maintain technical documentation, operational runbooks, and support playbooks for knowledge management and production operations.',
+			}
+		],
+		techstack: [],
+	},
+	{
+		workplace: "Fortis (Remote)",
+		position: "Technical Lead | Senior Data Engineer",
+		serviceLength: "2023 - 2024",
+		location: "Plano, TX",
+		description: [
+			{
+				text: 'Designed and maintained event-driven ETL pipelines for financial transaction processing and data integration using AWS services including S3, EventBridge, Step Functions, ECS, Lambda, and PostgreSQL.',
+			},
+			{
+				text: 'Designed datasync process across systems using AWS SQS, Kinesis, Lambda, Python.',
+			},
+			{
+				text: 'Collaborated with cross-functional teams to deliver reporting, analytics, and operational data solutions.',
+			},
+			{
+				text: 'Designed relational database schemas and optimized data models for performance and scalability. Includes normalization, materialized views, and indexing.',
+			},
+			{
+				text: 'Developed stored procedures and data normalization processes supporting downstream applications.',
+			},
+			{
+				text: 'Built automated pipelines for ingesting and transforming API data into PostgreSQL utilizing Data Load Tool (DLT). Integrations with Hubspot CRM, Boomtown CRM, and Fiserv AccessOne API.',
+			},
+			{
+				text: 'Built CI/CD Bitbucket pipelines using SAM templates to deploy AWS resources.',
+			},
+			{
+				text: 'Drove local testing utilizing Docker and SAM CLI.',
+			},
+			{
+				text: 'Added better database migration and versioning with Liquibase.',
+			},
+			{
+				text: 'Mentored engineers and provided technical leadership on architecture and implementation decisions.',
+			},
+			{
+				text: 'Utilized serverless stack to maintain API via AWS API Gateway, Lambda, and Node.js.',
+			}
+		],
+		techstack: [
+			{ name: "AWS", url: "https://aws.amazon.com/" },
+			{ name: "PostgreSQL", url: "https://www.postgresql.org/" },
+			{ name: "Python", url: "https://www.python.org/" },
+			{ name: "Node.js", url: "https://nodejs.org/" },
+			{ name: "Docker", url: "https://www.docker.com/" },
+			{ name: "Bitbucket", url: "https://bitbucket.org/" },
+			{ name: "Liquibase", url: "https://www.liquibase.com/" },
+		],
+	},
+	{
+		workplace: "Hmong Southeast Puavpheej, Inc.",
+		position: "Director of IT Operations",
+		serviceLength: "2023 - 2024",
+		location: "Hickory, NC",
+		description: [
+			{
+				text: 'Lead IT strategy, infrastructure modernization, and operational planning for the organization.',
+			},
+			{
+				text: 'Manage technology procurement, budgeting, vendor relationships, and contract negotiations.',
+			},
+			{
+				text: 'Implemented Google Workspace to improve organizational communication, collaboration, and productivity.',
+			},
+			{
+				text: 'Established nonprofit technology partnerships through TechSoup and GiveLively to reduce operational costs.',
+			},
+			{
+				text: 'Designed workflows supporting email marketing, newsletters, and SMS outreach campaigns.',
+			},
+			{
+				text: 'Directed website modernization and content management system improvements.',
+			},
+			{
+				text: 'Introduced technology-driven process improvements to increase organizational efficiency.',
+			}
+		],
+		techstack: [
+			{ name: "Google Workspace", url: "https://workspace.google.com/" },
+			{ name: "AstroJS", url: "https://astro.build/" },
+			{ name: "Sanity CMS", url: "https://www.sanity.io/" },
+			{ name: "Google GCP", url: "https://cloud.google.com/" },
+			{ name: "Stripe", url: "https://stripe.com/" },
+			{ name: "TypeScript", url: "https://www.typescriptlang.org/" },
+			{ name: "Node.js", url: "https://nodejs.org/" },
+			{ name: "GitHub", url: "https://github.com/" },
+		],
+	},
+	{
+		workplace: "BMW Group",
+		position: "Senior Full Stack Software Engineer",
 		serviceLength: "2019 - 2023",
 		location: "Greenville, SC",
 		description: [
 			{
-				text: 'Developed an application called FMS – Field Management System for managing dealership interaction.',
-			}
-			,
-			{
-				text: 'Developed an application called BMW ChargeForward for managing user vehicle charging',
-			}
-			,
-			{
-				text: 'Developed an application for managing mobile wallet passes called BMW-Prime',
+				text: 'Developed and maintained cloud-native applications supporting dealership operations, customer engagement, mobile wallet management, and electric vehicle charging programs.',
 			},
 			{
-				text: 'Developed front-end application in AngularJS called WebEAM Next to handle OAuth2 authentication leveraging ForgeRock’s API',
+				text: 'Built REST APIs and microservices using Node.js, NestJS, and Spring technologies.',
 			},
 			{
-				text: 'Continuous integration and deployment via AWS codepipeline',
-			}
+				text: 'Designed PostgreSQL data models and implemented scalable backend architectures.',
+			},
+			{
+				text: 'Developed modern web applications using AngularJS.',
+			},
+			{
+				text: 'Deployed applications to AWS and Kubernetes environments using Docker and CI/CD pipelines.',
+			},
+			{
+				text: 'Integrated AWS services including Lambda, SQS, SNS, ECR, and Elastic Beanstalk to support event-driven processing.',
+			},
+			{
+				text: 'Collaborated with product owners, architects, and engineering teams to deliver enterprise software solutions.',
+			},
+			{
+				text: 'Notable Projects',
+				subtext: [
+					{ text: 'BMW Prime – Mobile wallet pass management platform.' },
+					{ text: 'WebEAM Next – OAuth2 authentication platform leveraging ForgeRock APIs.' },
+					{ text: 'Field Management System (FMS) – Dealership engagement and management platform.' },
+					{ text: 'BMW ChargeForward – Electric vehicle charging management and customer engagement platform.' },
+				],
+			},
 		],
 		techstack: [
-			{ name: "Typescript", url: "https://www.typescriptlang.org/" },
-			{ name: "Angular", url: "https://angular.io/" },
-			{ name: "ForgeRock", url: "https://www.forgerock.com/" },
+			{ name: "Node.js", url: "https://nodejs.org/" },
 			{ name: "NestJS", url: "https://nestjs.com/" },
-			{ name: "Postgresql", url: "https://www.postgresql.org/" },
-			{ name: "TypeORM", url: "https://typeorm.io/" },
-			{ name: "MikroORM", url: "https://mikro-orm.io/" },
+			{ name: "Spring", url: "https://spring.io/" },
+			{ name: "Angular", url: "https://angular.io/" },
+			{ name: "PostgreSQL", url: "https://www.postgresql.org/" },
+			{ name: "AWS", url: "https://aws.amazon.com/" },
 			{ name: "Docker", url: "https://www.docker.com/" },
-			{ name: "Spring Cloud Gateway", url: "https://cloud.spring.io/spring-cloud-gateway/reference/html/" },
-			{ name: "AWS (Lambda, Gateway, Beanstalk, EC2, SNS, SQS, EC2, RDS, DynamoDB)", url: "https://aws.amazon.com/" },
-
+			{ name: "Kubernetes", url: "https://kubernetes.io/" },
+			{ name: "ForgeRock", url: "https://www.forgerock.com/" },
 		],
 	},
 	{
 		workplace: "Premier Inc.",
 		position: "Software Engineer",
-		serviceLength: "2015 - 2019",
-		location: "Greenville, SC",
+		serviceLength: "2013 - 2019",
+		location: "Charlotte, NC",
 		description: [
 			{
-				text: 'Developed a web application for hospital users to be able to interact with their data called Premier Data Exchange.',
+				text: 'Developed enterprise healthcare data exchange applications used to support hospital data integration and reporting.',
 			},
 			{
-				text: 'Responsibilities include designing, developing, and testing for the front-end, back-end, and continuous integration/deployment.',
+				text: 'Designed, developed, tested, and deployed full-stack software solutions using Java, Spring Boot, and Spring Data JPA.',
 			},
 			{
-				text: 'Developed a front-end single page application using Vaadin as the core technology.',
-			}
-			,
+				text: 'Built single-page applications using Vaadin and Vue.js.',
+			},
 			{
-				text: 'Prototype in web technologies such as VueJS.',
-			}
-			,
+				text: 'Developed ETL processes for loading and transforming healthcare data into Oracle databases using Cloudera-supported tools.',
+			},
 			{
-				text: 'Continuous integration and deployment via Bamboo, Gitlab and Docker.',
+				text: 'Created data access layers and services interacting with CockroachDB and Oracle databases.',
+			},
+			{
+				text: 'Integrated Oracle databases and legacy systems through asynchronous messaging using RabbitMQ.',
+			},
+			{
+				text: 'Supported CI/CD processes using GitLab, Atlassian Bamboo, and Docker.',
+			},
+			{
+				text: 'Developed Premier SPL Mapper, an internal application for mapping clinical data to government reporting standards.',
+			},
+			{
+				text: 'Leveraged Apache Solr to provide predictive mappings between hospital-submitted descriptions and billing codes.',
+			},
+			{
+				text: 'Collaborated with business stakeholders and engineering teams to deliver scalable healthcare solutions.',
+			},
+			{
+				text: 'Participated in all phases of the software development lifecycle including design, implementation, testing, and deployment.',
 			}
 		],
 		techstack: [
 			{ name: "Java", url: "https://www.oracle.com/java/technologies/downloads/" },
 			{ name: "Spring", url: "https://spring.io/" },
-			{ name: "Groovy", url: "https://groovy-lang.org/" },
-			{ name: "RabbitMQ", url: "https://www.rabbitmq.com/" },
 			{ name: "Vaadin", url: "https://vaadin.com/" },
-			{ name: "Selenium", url: "https://www.selenium.dev/" },
-			{ name: "Docker", url: "https://www.docker.com/" },
+			{ name: "Vue.js", url: "https://vuejs.org/" },
 			{ name: "Oracle", url: "https://www.oracle.com/database/" },
 			{ name: "CockroachDB", url: "https://www.cockroachlabs.com/" },
-			{ name: "Cloudera Hadoop", url: "https://www.cloudera.com/" },
-		],
-	},
-	{
-		workplace: "Premier Inc.",
-		position: "Associate Software Engineer",
-		serviceLength: "2013 - 2014",
-		location: "Greenville, SC",
-		description: [
-			{
-				text: 'Developed an in-house web application for use in mapping clinical data called Premier SPL Mapper. Saved company time and money when having to submit proper data to the government.',
-			},
-			{
-				text: 'Responsibilities include designing, developing, and testing for the front-end, back-end, and continuous integration/deployment.',
-			},
-			{
-				text: 'Used Solr search engine technology to do predictive mappings of hospital submitted description to billing codes.',
-			}
-			,
-			{
-				text: 'Wrote REST API endpoints for the client front-end to request data from backend services. Back-end service written with Spring Boot and database interaction with Spring Data-JPA and OracleDB.',
-			}
-			,
-			{
-				text: 'Provided data sync between legacy app and current app by passing data through RabbitMQ',
-			}
-			,
-			{
-				text: 'Continuous integration and deployment via Atlassian Bamboo and Docker.',
-			}
-		],
-		techstack: [
-			{ name: "Java", url: "https://www.oracle.com/java/technologies/downloads/" },
-			{ name: "Javascript", url: "https://vaadin.com/" },
-			{ name: "Spring", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-			{ name: "Solr", url: "https://solr.apache.org/" },
-			{ name: "Dojo Toolkit", url: "https://dojotoolkit.org/" },
 			{ name: "RabbitMQ", url: "https://www.rabbitmq.com/" },
-			{ name: "Selenium", url: "https://www.selenium.dev/" },
+			{ name: "Apache Solr", url: "https://solr.apache.org/" },
+			{ name: "Cloudera", url: "https://www.cloudera.com/" },
+			{ name: "GitLab", url: "https://gitlab.com/" },
 			{ name: "Docker", url: "https://www.docker.com/" },
-			{ name: "Oracle", url: "https://www.oracle.com/database/" },
 		],
-	},
+	}
 ];
 
 export interface Project {
@@ -175,7 +278,6 @@ export interface Project {
 const projects: Project[] = [
 	{ 
 		title: 'BB Nail & Spa',
-		url: 'https://bbnailandspa.com',
 		description: [
 			{ 
 				text: `This project includes designing and developing a website for a business with SEO in mind.
@@ -186,7 +288,6 @@ const projects: Project[] = [
 	},
 	{ 
 		title: 'Hmong Southeast Puavpheej',
-		url: 'https://hmongsoutheastpuavpheej.org',
 		description: [
 			{ 
 				text: `This project includes designing and developing a website for a nonprofit organization.
@@ -199,7 +300,6 @@ const projects: Project[] = [
 	},
 	{ 
 		title: 'BMW Field Management System',
-		url: '',
 		description: [
 			{ 
 				text: `FMS is an application written for tracking BMW and dealership interactions
@@ -212,7 +312,6 @@ const projects: Project[] = [
 	},
 	{ 
 		title: 'BMW ChargeForward',
-		url: 'https://bmwchargeforward.com',
 		description: [
 			{ 
 				text: `
@@ -228,7 +327,6 @@ const projects: Project[] = [
 	},
 	{ 
 		title: 'BMW Prime',
-		url: '',
 		description: [
 			{ 
 				text: `BMW Prime is a NestJS application written for issueing wallet passes. 
@@ -237,9 +335,16 @@ const projects: Project[] = [
 			},
 		]
 	},
+	{
+		title: 'WebEAM Next',
+		description: [
+			{
+				text: `WebEAM Next is an OAuth2 authentication platform leveraging ForgeRock's APIs.`
+			}
+		]
+	},
 	{ 
 		title: 'Premier Data Exchange',
-		url: 'https://dataexchange.premierinc.com',
 		description: [
 			{
 				text: `Premier Data Exchange is an ETL application with a frontend and backend component. 
@@ -253,7 +358,6 @@ const projects: Project[] = [
 	},
 	{ 
 		title: 'Premier SPL Mapper',
-		url: 'https://splmapper.premierinc.com',
 		description: [
 			{
 				text: `Premier SPLMapper is an application written to intelligently map unformatted string/text to Federal readable standard.
@@ -270,11 +374,11 @@ const projects: Project[] = [
 
 const personalProjects: Project[] = [
 	{ 
-		title: 'Royal Magical Library',
-		url: 'https://royalmagicallibrary.com',
+		title: 'Dekzter',
+		url: 'https://dekzter.com',
 		description: [
 			{ 
-				text: `Royal Magical Library is my attempt to combine NextJS (frontend), typesense(Full Text Search), and postgresql(Database) into a Yu-Gi-Oh card search engine. Similar to that of scryfall.com`
+				text: `Dekzter is a Yu-Gi-Oh! card database and deck-building platform for searching cards by rules text, archetype, stats, legality, and price, then turning those discoveries into legal, testable decks.`
 			},
 		]
 	},
@@ -291,176 +395,235 @@ const personalProjects: Project[] = [
 ---
 
 <Layout title="Randy Yang">
-	<main class="p-10 mt-5 flex-grow flex flex-col gap-8 mx-auto container">
-		<div>
-			<div class="flex flex-row">
-				<p class="font-semibold text-4xl flex-grow">Randy Yang</p>
-        <div class="group flex relative">
-          <button id="themeSwitchButton" aria-label="Theme Switch Button"><i class="fa-solid fa-circle-half-stroke"></i></button>
-          <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
-          -translate-x-1/2 translate-y-full opacity-0 mx-auto">Toggle Theme</span>
-        </div>
+	<main class="min-h-screen">
+		<nav class="sticky top-0 z-20 border-b border-base-300 bg-base-100/95 backdrop-blur" aria-label="Main navigation">
+			<div class="navbar mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+				<div class="flex-1">
+					<a href="/" class="btn btn-ghost px-2 text-lg font-bold">Randy Yang</a>
+				</div>
+				<div class="hidden items-center gap-1 sm:flex">
+					<a href="#experience" class="btn btn-ghost btn-sm">Experience</a>
+					<a href="#professional-projects" class="btn btn-ghost btn-sm">Projects</a>
+					<a href="#contact" class="btn btn-ghost btn-sm">Contact</a>
+				</div>
+				<div class="dropdown dropdown-end sm:hidden">
+					<button tabindex="0" class="btn btn-ghost btn-circle" aria-label="Open navigation menu">
+						<i class="fa-solid fa-bars" aria-hidden="true"></i>
+					</button>
+					<ul tabindex="0" class="menu dropdown-content z-30 mt-3 w-44 rounded-box border border-base-300 bg-base-100 p-2 shadow">
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#professional-projects">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<button id="themeSwitchButton" type="button" class="btn btn-ghost btn-circle" aria-label="Toggle color theme" title="Toggle color theme">
+					<i class="fa-solid fa-circle-half-stroke" aria-hidden="true"></i>
+				</button>
 			</div>
-			<hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
-			<p class="italic">Full Stack Software Engineer, Designer, Game Developer</p>
-			<p class="mt-8">
-				Hello and welcome. I am a seasoned full stack software engineer with 10+ years of experience in the industry. I love making and breaking stuff. It's the best way to learn!
-				As a fullstack software engineer, I am a versatile professional with a passion for creating innovative software applications. My expertise in both front-end and back-end development allows me to build robust and scalable software products that can run seamlessly on various platforms and devices. With a diverse range of technical skills, including programming languages, frameworks, and databases, I have a deep understanding of user interface design, server-side programming, and database management. As a result, I am able to create high-quality software products that meet the needs of modern businesses and organizations. I am excited to continue pushing the boundaries of software engineering and delivering solutions that have a positive impact on people's lives.
-			</p>
-		</div>
+		</nav>
 
-		<section id="experience" class="flex flex-col gap-4">
-			<a href="#experience" class="font-semibold text-2xl underline align-middle">Experience <i class="fa-solid fa-link fa-small text-sm"></i></a>
-			{
-				experiences.map((experience: Experience) => (
-					<div class="flex flex-col">
-						<div class="flex flex-row">
-							<div class="flex flex-col flex-grow">
-								<p class="font-semibold text-xl">{experience.workplace}</p>
-								<p class="italic">{experience.position}</p>
-								<p>{experience.serviceLength}</p>
+		<div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+			<header class="grid gap-10 border-b border-base-300 py-14 sm:py-20 lg:grid-cols-[minmax(0,1fr)_18rem] lg:items-center">
+				<div class="max-w-3xl">
+					<p class="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">Data Engineering Manager</p>
+					<h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Building reliable systems from complex data.</h1>
+					<p class="mt-6 text-lg leading-8 text-base-content/75">
+						Data Engineering Manager with 13+ years of experience designing and delivering scalable data platforms, ETL pipelines, and cloud-native applications. Proven track record leading engineering teams, building event-driven architectures on AWS, and partnering with business stakeholders to transform complex data into actionable insights.
+					</p>
+					<div class="mt-8 flex flex-wrap gap-3">
+						<a class="btn btn-primary" href="#experience">View experience</a>
+						<a class="btn btn-outline" href="/resume/Randy_Yang_Resume.docx" download>Download resume</a>
+					</div>
+				</div>
+				<aside class="card border border-base-300 bg-base-100 shadow-sm">
+					<div class="card-body p-5">
+						<h2 class="card-title text-base">At a glance</h2>
+						<div class="divider my-0"></div>
+						<dl class="space-y-4 text-sm">
+							<div>
+								<dt class="text-base-content/60">Based in</dt>
+								<dd class="font-medium">Spartanburg, South Carolina</dd>
 							</div>
-						</div>
-						<div class="ml-4 text-sm">
-							<div class="list-disc">
-								{
-									experience.description.map((description: Description) => (
-										<div>{description.text}</div>
-										<div class="ml-4">
+							<div>
+								<dt class="text-base-content/60">Focus</dt>
+								<dd class="font-medium">Data platforms, cloud architecture, engineering leadership</dd>
+							</div>
+							<div>
+								<dt class="text-base-content/60">Experience</dt>
+								<dd class="font-medium">13+ years</dd>
+							</div>
+						</dl>
+					</div>
+				</aside>
+			</header>
+
+			<section id="experience" class="scroll-mt-24 border-b border-base-300 py-14 sm:py-16">
+				<div class="mb-8 flex items-end justify-between gap-4">
+					<div>
+						<p class="text-sm font-semibold uppercase tracking-widest text-primary">Career</p>
+						<h2 class="mt-2 text-3xl font-bold tracking-tight">Experience</h2>
+					</div>
+					<a href="#experience" class="link link-hover hidden text-sm sm:inline">Permalink</a>
+				</div>
+				<div class="space-y-5">
+					{
+						experiences.map((experience: Experience) => (
+							<article class="card border border-base-300 bg-base-100 shadow-sm">
+								<div class="card-body gap-5 p-5 sm:p-6">
+									<div class="flex flex-col gap-2 border-b border-base-300 pb-5 sm:flex-row sm:items-start sm:justify-between sm:gap-6">
+										<div>
+											<h3 class="card-title text-xl">{experience.position}</h3>
+											<p class="mt-1 font-medium text-base-content/75">{experience.workplace}</p>
+										</div>
+										<div class="text-sm text-base-content/65 sm:text-right">
+											<p>{experience.serviceLength}</p>
+											<p>{experience.location}</p>
+										</div>
+									</div>
+									<ul class="list-disc space-y-2 pl-5 text-sm leading-6 text-base-content/80">
 										{
-											description?.subtext?.map((subtext: Description) => (
-												<div>{subtext.text}</div>
+											experience.description.map((description: Description) => (
+												<li>
+													{description.text}
+													{description.subtext && (
+														<ul class="mt-2 list-[circle] space-y-1 pl-5">
+															{description.subtext.map((subtext: Description) => <li>{subtext.text}</li>)}
+														</ul>
+													)}
+												</li>
 											))
 										}
-										</div>
-									))
-								}
-							</div>
-						</div>
-						<div>
-							<details class="hover:cursor-pointer">
-								<summary>Tech Stack</summary>
-								<ul class="ml-8 text-sm">
-									{ experience.techstack.map(
-										(technology: Technology) => (
-											<li>
-												<a href={technology.url}>
-													{technology.name}
-												</a>
-											</li>
-										)
+									</ul>
+									{experience.techstack.length > 0 && (
+										<details class="collapse collapse-arrow rounded-box border border-base-300 bg-base-200">
+											<summary class="collapse-title min-h-0 py-3 font-medium">Technology used</summary>
+											<div class="collapse-content">
+												<div class="flex flex-wrap gap-2 pt-1">
+													{experience.techstack.map((technology: Technology) => (
+														<a class="badge badge-outline transition-colors hover:badge-primary" href={technology.url} target="_blank" rel="noreferrer">{technology.name}</a>
+													))}
+												</div>
+											</div>
+										</details>
 									)}
-								</ul>
-							</details>
-						</div>
+								</div>
+							</article>
+						))
+					}
+				</div>
+			</section>
+
+			<section id="professional-projects" class="scroll-mt-24 border-b border-base-300 py-14 sm:py-16">
+				<div class="mb-8 flex items-end justify-between gap-4">
+					<div>
+						<p class="text-sm font-semibold uppercase tracking-widest text-primary">Selected work</p>
+						<h2 class="mt-2 text-3xl font-bold tracking-tight">Professional Projects</h2>
 					</div>
-				))
-			}
-		</section>
+					<a href="#professional-projects" class="link link-hover hidden text-sm sm:inline">Permalink</a>
+				</div>
+				<div class="grid gap-5 md:grid-cols-2">
+					{projects.map((project: Project) => (
+						<article class="card border border-base-300 bg-base-100 shadow-sm">
+							<div class="card-body gap-3 p-5">
+								<h3 class="card-title text-lg">{project.title}</h3>
+								<div class="text-sm leading-6 text-base-content/75">
+									{project.description.map((description: Description) => <p>{description.text}</p>)}
+								</div>
+							</div>
+						</article>
+					))}
+				</div>
+			</section>
 
-    <section id="professional-projects" class="flex flex-col gap-4">
-      <a href="#professional-projects" class="font-semibold text-2xl underline align-middle">Professional Projects <i class="fa-solid fa-link fa-small text-sm"></i></a>
-      <div class="flex flex-col gap-2">
-        { 
-          projects.map((project: Project) => (
-            <div>
-              <div class="flex flex-col gap-2 align-middle">
-                { project.url ?
-                  <a href={ project.url } class="font-semibold">{ project.title } <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a> 
-                  : <p class="font-semibold">{ project.title }</p>
-                }
-              </div>
-              <div class="ml-4 text-sm">
-                { 
-                  project.description.map((description: Description) => (
-                    <p>{ description.text }</p> 
-                  ))
-                }
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </section>
-
-		<section id="personal-projects" class="flex flex-col gap-4">			
-      <a href="#personal-projects" class="font-semibold text-2xl underline align-middle">Personal Projects <i class="fa-solid fa-link fa-small text-sm"></i></a>
-			<div class="flex flex-col gap-2">
-				<div><a href="https://github.com/randyyaj/"><i class="fa-brands fa-github mr-2"></i>Github</a></div>
-				{ 
-					personalProjects.map((project: Project) => (
-						<div>
-              <div class="flex flex-col gap-2 align-middle">
-                  { project.url ?
-                    <a href={ project.url } class="font-semibold">{ project.title } <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i></a> 
-                    : <p class="font-semibold">{ project.title }</p>
-                  }
-                </div>							
-                <div class="ml-4 text-sm">
-								{ 
-									project.description.map((description: Description) => (
-										<p>{ description.text }</p> 
-									))
-								}
+			<section id="personal-projects" class="scroll-mt-24 border-b border-base-300 py-14 sm:py-16">
+				<div class="mb-8 flex items-end justify-between gap-4">
+					<div>
+						<p class="text-sm font-semibold uppercase tracking-widest text-primary">Outside of work</p>
+						<h2 class="mt-2 text-3xl font-bold tracking-tight">Personal Projects</h2>
+					</div>
+					<a href="#personal-projects" class="link link-hover hidden text-sm sm:inline">Permalink</a>
+				</div>
+				<div class="grid gap-5 md:grid-cols-2">
+					<a href="https://github.com/randyyaj/" target="_blank" rel="noreferrer" class="card border border-dashed border-base-300 bg-base-100 shadow-sm transition-colors hover:border-primary">
+						<div class="card-body flex-row items-center gap-4 p-5">
+							<i class="fa-brands fa-github text-2xl" aria-hidden="true"></i>
+							<div>
+								<h3 class="font-semibold">Github</h3>
+								<p class="text-sm text-base-content/65">View all repositories</p>
 							</div>
 						</div>
-					))
-				}
-			</div>
-		</section>
+					</a>
+					{personalProjects.map((project: Project) => (
+						<article class="card border border-base-300 bg-base-100 shadow-sm">
+							<div class="card-body gap-3 p-5">
+								{project.url ? (
+									<a href={project.url} target="_blank" rel="noreferrer" class="link link-hover card-title text-lg">{project.title} <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i></a>
+								) : <h3 class="card-title text-lg">{project.title}</h3>}
+								<div class="text-sm leading-6 text-base-content/75">
+									{project.description.map((description: Description) => <p>{description.text}</p>)}
+								</div>
+							</div>
+						</article>
+					))}
+				</div>
+			</section>
 
-		<section id="resume" class="flex flex-col gap-4">			
-      <a href="#resume" class="font-semibold text-2xl underline align-middle">Resume <i class="fa-solid fa-link fa-small text-sm"></i></a>
-			<a href="https://docs.google.com/document/d/1rxUhFZ5yZUtpfEf_ifrGOQ0SdhoKsPyklpJA5v9hn4s"><i class="fa-solid fa-file-arrow-down mr-2"></i>Download</a>
-		</section>
-
-		<section id="education" class="flex flex-col gap-4">
-      <a href="#education" class="font-semibold text-2xl underline align-middle">Education <i class="fa-solid fa-link fa-small text-sm"></i></a>
-			<div class="flex flex-col gap-4">
-				<div class="flex flex-row flex-wrap">
-					<a href="https://www.wcu.edu/"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Western_Carolina_University_Logo.svg" alt="Western Carolina University" class="w-36 h-16 mr-4"></a>
-					<div>
-						<p class="font-semibold">B.S. in Computer Science, Minor in Mathematics</p>
-						<p>Western Carolina University, Cullowhee, NC</p>
-						<p>2013</p>
+			<section class="grid gap-10 border-b border-base-300 py-14 sm:py-16 md:grid-cols-2">
+				<div id="resume" class="scroll-mt-24">
+					<p class="text-sm font-semibold uppercase tracking-widest text-primary">Background</p>
+					<h2 class="mt-2 text-3xl font-bold tracking-tight">Resume</h2>
+					<p class="mt-4 max-w-md text-base-content/75">Download a copy of my resume for a concise overview of my experience and technical background.</p>
+					<a class="btn btn-primary mt-6 w-fit" href="/resume/Randy_Yang_Resume.docx" download><i class="fa-solid fa-file-arrow-down mr-2" aria-hidden="true"></i>Download resume</a>
+				</div>
+				<div id="education" class="scroll-mt-24">
+					<p class="text-sm font-semibold uppercase tracking-widest text-primary">Education</p>
+					<h2 class="mt-2 text-3xl font-bold tracking-tight">Computer Science</h2>
+					<div class="mt-5 flex items-center gap-4">
+						<a href="https://www.wcu.edu/" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Western_Carolina_University_Logo.svg" alt="Western Carolina University" class="h-16 w-36 object-contain"></a>
+						<div class="text-sm">
+							<p class="font-semibold">B.S. in Computer Science, Minor in Mathematics</p>
+							<p class="text-base-content/75">Western Carolina University</p>
+							<p class="text-base-content/60">May 2013</p>
+						</div>
+					</div>
+					<div class="mt-6 flex items-center gap-4 border-t border-base-300 pt-6">
+						<a href="https://www.cpcc.edu/" target="_blank" rel="noreferrer"><img src="https://cdn.cpcc.edu/latest/images/logos/favicon.svg" alt="Central Piedmont Community College" class="h-16 w-36 object-contain"></a>
+						<div class="text-sm">
+							<p class="font-semibold">Studied Simulation and Game Development</p>
+							<p class="text-base-content/75">Central Piedmont Community College, Charlotte, NC</p>
+							<p class="text-base-content/60">2009</p>
+						</div>
 					</div>
 				</div>
-				<div class="flex flex-row flex-wrap">
-					<a href="https://www.cpcc.edu/"><img src="https://cdn.cpcc.edu/latest/images/logos/favicon.svg" alt="CPCC" class="w-36 h-14 mr-4"></a>
-					<div>
-						<p class="font-semibold">Studied Simulation and Game Development</p>
-						<p>Central Piedmont Community College, Charlotte, NC</p>
-						<p>2009</p>
+			</section>
+
+			<section id="contact" class="scroll-mt-24 py-14 sm:py-16">
+				<div class="rounded-box bg-primary px-6 py-8 text-primary-content sm:px-10 sm:py-10">
+					<div class="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+						<div>
+							<p class="text-sm font-semibold uppercase tracking-widest opacity-80">Get in touch</p>
+							<h2 class="mt-2 text-3xl font-bold">Let’s build something useful.</h2>
+							<p class="mt-2 opacity-80">Based in Spartanburg, SC and open to thoughtful engineering conversations.</p>
+						</div>
+						<div class="flex flex-wrap gap-2">
+							<a class="btn bg-base-100 text-base-content hover:bg-base-200" href="mailto:ryang.developer@gmail.com"><i class="fa-regular fa-envelope mr-2" aria-hidden="true"></i>Email</a>
+							<a class="btn btn-ghost text-primary-content hover:bg-primary-content/20" href="https://www.linkedin.com/in/randyyang/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin mr-2" aria-hidden="true"></i>LinkedIn</a>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-    <section id="contact" class="flex flex-col gap-4">
-      <a href="#contact" class="font-semibold text-2xl underline align-middle">Contact Me <i class="fa-solid fa-link fa-small text-sm"></i></a>
-      <div class="flex flex-col gap-2">
-        <a href="mailto:randyyaj1@gmail.com"><i class="fa-regular fa-envelope mr-2"></i>Email</a>
-        <a href="https://www.linkedin.com/in/randyyang/"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
-      </div>
-    </section>
+			</section>
+		</div>
 	</main>
 </Layout>
 
 <script>
-  const themeToggleButton: HTMLElement = document.getElementById('themeSwitchButton') as HTMLElement;
-  const currentTheme = localStorage.getItem("theme");
+  const themeToggleButton = document.querySelector<HTMLButtonElement>("#themeSwitchButton");
 
-  if (currentTheme) {
-    document.documentElement.setAttribute("data-theme", currentTheme);
-  }
+  themeToggleButton?.addEventListener("click", () => {
+    const nextTheme = document.documentElement.dataset.theme === "forest" ? "emerald" : "forest";
 
-  themeToggleButton?.addEventListener("click", (e: Event) => {
-    if (localStorage.getItem("theme") === 'light') {
-      document.documentElement.setAttribute("data-theme", "dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.setAttribute("data-theme", "light");
-      localStorage.setItem("theme", "light");
-    }
-  }, false);
+    document.documentElement.dataset.theme = nextTheme;
+    document.documentElement.classList.toggle("dark", nextTheme === "forest");
+    localStorage.setItem("theme", nextTheme);
+  });
 </script>

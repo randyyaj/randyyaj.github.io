@@ -7,13 +7,16 @@ const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+	<html lang="en" data-theme="emerald">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="description" content="Randy Yang | Fullstack Software Engineer" />
+		<meta name="description" content="Randy Yang | Data Engineering Manager" />
 
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+		<script is:inline src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -24,29 +27,26 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="dark:bg-zinc-900 dark:text-white">
+	<body class="bg-base-200 text-base-content">
 		<slot />
 	</body>
 </html>
 
 <script is:inline>
 	const theme = (() => {
-		if (
-			typeof localStorage !== "undefined" &&
-			localStorage.getItem("theme")
-		) {
-			return localStorage.getItem("theme");
+		const savedTheme = localStorage.getItem("theme");
+
+		if (savedTheme === "forest" || savedTheme === "dark") {
+			return "forest";
 		}
-		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-			return "dark";
+		if (savedTheme === "emerald" || savedTheme === "light") {
+			return "emerald";
 		}
-		return "light";
+
+		return window.matchMedia("(prefers-color-scheme: dark)").matches ? "forest" : "emerald";
 	})();
 
-	if (theme === "light") {
-		document.documentElement.classList.remove("dark");
-	} else {
-		document.documentElement.classList.add("dark");
-	}
+	document.documentElement.classList.toggle("dark", theme === "forest");
+	document.documentElement.setAttribute("data-theme", theme);
 	window.localStorage.setItem("theme", theme);
 </script>
